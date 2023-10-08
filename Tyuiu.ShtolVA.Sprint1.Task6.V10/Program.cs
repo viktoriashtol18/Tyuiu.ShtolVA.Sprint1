@@ -15,11 +15,11 @@ namespace Tyuiu.ShtolVA.Sprint1.Task6.V10
             DataService ds = new DataService();
             Console.Title = "Спринт #1 | Выполнила: Штоль В.А. | ИИПБ-23-3";
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Спринт #1 *");
-            Console.WriteLine("* Тема: Работа со строками класс String*");
-            Console.WriteLine("* Задание #4 *");
-            Console.WriteLine("* Вариант #28 *");
-            Console.WriteLine("* Выполнила: Штоль Виктория Алексеевна | ИИПБ-23-3 *");
+            Console.WriteLine("* Спринт #1                                                               *");
+            Console.WriteLine("* Тема: Работа со строками класс String                                   *");
+            Console.WriteLine("* Задание #6                                                              *");
+            Console.WriteLine("* Вариант #10                                                             *");
+            Console.WriteLine("* Выполнила: Штоль Виктория Алексеевна | ИИПБ-23-3                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ: *");
             Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
@@ -30,17 +30,16 @@ namespace Tyuiu.ShtolVA.Sprint1.Task6.V10
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ: *");
             Console.WriteLine("***************************************************************************");
 
-            int x, y;
+            string x;
 
             Console.WriteLine("Введите значение x:");
-            x = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите значение y:");
-            y = Convert.ToInt32(Console.ReadLine());
+            x = Convert.ToString(Console.ReadLine());
+           
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ: *");
             Console.WriteLine("***************************************************************************");
-
+            Console.WriteLine(ds.DeleteMiddleLetter(x));
             Console.ReadKey();
         }
     }

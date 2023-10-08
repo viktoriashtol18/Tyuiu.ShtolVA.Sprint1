@@ -11,10 +11,10 @@ namespace Tyuiu.ShtolVA.Sprint1.Task6.V10.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string strTest = "сегодня пятница,завтра суббота";
+            string strTest = "сегодня был бык";
             DataService ds = new DataService();
-            string res = ds.WorkWithText(strTest);
-            string wait = "сегдня пятица,завтра субота";
+            string res = ds.DeleteMiddleLetter(strTest);
+            string wait = "сегдня бл бк";
             Assert.AreEqual(wait, res);
         }
     }
